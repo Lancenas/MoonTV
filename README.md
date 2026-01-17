@@ -181,7 +181,7 @@
 ```bash
 # 拉取预构建镜像
 # 或拉取最新版本
-docker pull ghcr.io/stardm0/moontv:latest
+docker pull ghcr.io/lance159/moontv:latest
 
 # 运行容器
 # -d: 后台运行  -p: 映射端口 3000 -> 3000
@@ -195,7 +195,7 @@ docker run -d --name moontv -p 3000:3000 --env PASSWORD=your_password ghcr.io/st
 ```yaml
 services:
   startv-core:
-    image: ghcr.io/stardm0/moontv:latest
+    image: ghcr.io/lance159/moontv:latest
     container_name: startv-core
     restart: on-failure
     ports:
@@ -209,7 +209,7 @@ services:
 ```yml
 services:
   moontv-core:
-    image: ghcr.io/stardm0/moontv:latest
+    image: ghcr.io/lance159/moontv:latest
     container_name: moontv-core
     restart: on-failure
     ports:
@@ -243,7 +243,7 @@ volumes:
 ```yml
 services:
   moontv-core:
-    image: ghcr.io/stardm0/moontv:latest
+    image: ghcr.io/lance159/moontv:latest
     container_name: moontv-core
     restart: on-failure
     ports:
@@ -276,7 +276,7 @@ networks:
 ```yaml
 services:
   startv-core:
-    image: ghcr.io/stardm0/moontv:latest
+    image: ghcr.io/lance159/moontv:latest
     container_name: startv-core
     restart: on-failure
     ports:
